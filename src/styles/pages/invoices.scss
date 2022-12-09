@@ -1,0 +1,251 @@
+.invoices {
+  padding: 2.5rem 1.5rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    margin: 0;
+    @extend .font-xxl;
+    color: $grey-800;
+  }
+  &__tabs {
+    display: flex;
+    border-bottom: 1px solid $grey-100;
+    margin-bottom: 1rem;
+    @media (max-width: 768px) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__tab {
+    padding: 0.5rem;
+    @extend .font-base;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: $grey-500;
+    margin-right: 0.5rem;
+    &--active {
+      color: $grey-900;
+      border-bottom: 1px solid $grey-900;
+    }
+
+    &-badge {
+      position: relative;
+      top: -5px;
+      @extend .font-base;
+      font-weight: 700;
+      color: $grey-400;
+
+      &--blue {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $sky-600;
+        display: inline-block;
+        top: -8px;
+      }
+    }
+  }
+
+  &__utils {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__search {
+    margin-right: 0.5rem;
+    background: $grey-100;
+    border-radius: $border-radius;
+    padding: 0 18.5px;
+    width: 402px;
+    display: flex;
+    align-items: center;
+    &-icon {
+      display: flex;
+      margin-right: 0.5rem;
+    }
+    &-image {
+      filter: invert(1);
+    }
+    &-input {
+      border: none;
+      background: transparent;
+      @extend .font-base;
+      color: $grey-500;
+      width: 100%;
+      height: 42px;
+      outline: none;
+      &::placeholder {
+        color: $grey-500;
+      }
+    }
+  }
+
+  &__filter {
+    &-button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    &-image {
+      margin-right: 0.5rem;
+    }
+    &-text {
+      @extend .font-base;
+      color: $grey-600;
+    }
+  }
+
+  &__settings {
+    margin-left: auto;
+    &-button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+  &__table {
+    border-collapse: collapse;
+    border: 1px solid $grey-200;
+    border-radius: $border-radius;
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    margin-bottom: 1.25rem;
+    overflow-x: scroll;
+    grid-template-columns:
+      minmax(50px, 0.3fr)
+      minmax(150px, 2fr)
+      minmax(250px, 2fr)
+      minmax(200px, 1fr)
+      minmax(100px, 1fr)
+      minmax(300px, 2.5fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr);
+
+    &-user {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $grey-200;
+        margin-right: 0.5rem;
+      }
+      &-img {
+        border-radius: 50%;
+      }
+
+      &-action {
+        margin-left: auto;
+        @extend .font-xs;
+        color: $sky-600;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &-image {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &-status {
+      display: flex;
+      align-items: center;
+    }
+
+    &-pending {
+      width: 52px;
+      height: 20px;
+      border: 1px solid $grey-200;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 2px 8px 2px 2px;
+    }
+
+    &-description {
+      @extend .font-sm;
+      color: $grey-600;
+      word-wrap: break-word;
+      white-space: break-spaces;
+    }
+
+    thead,
+    tbody,
+    tr {
+      display: contents;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.5rem;
+      @extend .font-xs;
+    }
+
+    td {
+      padding: 1rem 0.5rem 1rem 0.5rem;
+      @extend .font-base;
+    }
+
+    th,
+    td {
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    tr:nth-child(odd) td {
+      border-top: 1px solid $grey-200;
+      border-bottom: 1px solid $grey-200;
+    }
+
+    input[type="checkbox"] {
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 0.25rem;
+      border: 1px solid $grey-400;
+      outline: none;
+      cursor: pointer;
+      &:checked {
+        background-color: $sky-600;
+        border: 1px solid $sky-600;
+      }
+    }
+  }
+
+  .ant-tabs-nav {
+    margin-bottom: 0;
+  }
+
+  .ant-tabs-tab-btn {
+    padding: 0.5rem;
+    @extend .font-base;
+    background-color: transparent;
+    cursor: pointer;
+    color: $grey-500;
+  }
+
+  .ant-tabs-tab-active {
+    border-bottom: 1px solid $grey-900 !important;
+
+    .ant-tabs-tab-btn {
+      color: $grey-900 !important;
+    }
+  }
+}

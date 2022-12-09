@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Light Sans Display Trial';
+  src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin font-variant($size, $weight, $line-height, $letter-spacing) {
+  font-family: "Light Sans Display Trial";
+  font-style: normal;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin btn-colors($color, $bg-color, $border-color, $hover-color, $hover-bg-color, $hover-border-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $border-color;
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-bg-color;
+    border-color: $hover-border-color;
+  }
+  &:active {
+    color: $hover-color;
+    background-color: $hover-bg-color;
+    border-color: $hover-border-color;
+    outline: 2px solid $sky-600;
+  }
+}

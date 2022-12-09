@@ -1,0 +1,74 @@
+.font-xxs {
+  @include font-variant(
+    $font-size-xs,
+    $font-weight-normal,
+    $line-height-sm,
+    $letter-spacing-small
+  );
+}
+
+.font-xs {
+  @include font-variant(
+    $font-size-xs,
+    $font-weight-medium,
+    $line-height-sm,
+    $letter-spacing-small
+  );
+}
+
+.font-sm {
+  @include font-variant(
+    $font-size-sm,
+    $font-weight-normal,
+    $line-height-base,
+    $letter-spacing-normal
+  );
+}
+
+.font-base {
+  @include font-variant(
+    $font-size-sm,
+    $font-weight-medium,
+    $line-height-base,
+    $letter-spacing-normal
+  );
+}
+
+.font-lg {
+  @include font-variant(
+    $font-size-base,
+    $font-weight-normal,
+    $line-height-base,
+    $letter-spacing-normal
+  );
+}
+
+.font-xl {
+  @include font-variant(
+    $font-size-base,
+    $font-weight-medium,
+    $line-height-base,
+    $letter-spacing-normal
+  );
+}
+
+.font-xxl {
+  @include font-variant(
+    $font-size-lg,
+    $font-weight-medium,
+    $line-height-lg,
+    $letter-spacing-normal
+  );
+}
+
+.text {
+  @extend .font-base;
+
+  &--warning {
+    color: $yellow-600;
+  }
+
+  &--danger {
+    color: $orange-600;
+  }
+}

@@ -1,0 +1,42 @@
+.badge {
+  border-radius: 36px;
+  padding: 0.125rem 0.5rem;
+  @extend .font-base;
+  margin-right: 4px;
+
+  &--primary {
+    background-color: $grey-100;
+    color: $grey-500;
+  }
+
+  &--info {
+    background-color: $sky-100;
+    color: $sky-600;
+  }
+
+  &--success {
+    background-color: $emerald-50;
+    color: $emerald-600;
+  }
+
+  &--warning {
+    background-color: $yellow-50;
+    color: $yellow-600;
+  }
+
+  &--danger {
+    background-color: $orange-600;
+    color: $orange-50;
+  }
+
+  &--checked{
+    &::before {
+      content: '\2713';
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}

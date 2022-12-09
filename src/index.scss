@@ -1,0 +1,21 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "./styles/typography";
+@import "./styles/elements";
+@import "./styles/pages/invoices";
+
+body {
+  margin: 0;
+  font-family: "Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,240 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "invoiceNumber": "123456",
+      "vendor": {
+        "id": 1,
+        "name": "Dixa",
+        "approved": false,
+        "avatar": "/images/dixa.png"
+      },
+      "description": "Subscription for Sales CRM",
+      "status": "scanned",
+      "hasIssues": 2,
+      "timeInStage": "4 d 21 h",
+      "approver": null,
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 2,
+      "invoiceNumber": "123457",
+      "vendor": {
+        "id": 2,
+        "name": "Amazon AWS",
+        "approved": true,
+        "avatar": "images/aws.png"
+      },
+      "description": "App hosting for Q3",
+      "status": "approved",
+      "hasIssues": 0,
+      "timeInStage": "1 d 21 h",
+      "approver": null,
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+
+    {
+      "id": 3,
+      "invoiceNumber": "123458",
+      "vendor": {
+        "id": 3,
+        "name": "Chargebee",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Creative tool needed for graphics in marketing team",
+      "status": "pending",
+      "pages": 3,
+      "scanned": 1,
+      "hasIssues": 0,
+      "timeInStage": "5 d 17 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 4,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "approving",
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 5,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "pending",
+      "pages": 6,
+      "scanned": 2,
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 6,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "pending",
+      "pages": 3,
+      "scanned": 1,
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 7,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "scheduled",
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 8,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "pending",
+      "pages": 3,
+      "scanned": 1,
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 9,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "pending",
+      "pages": 3,
+      "scanned": 1,
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 10,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "pending",
+      "pages": 3,
+      "scanned": 1,
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    },
+    {
+      "id": 11,
+      "invoiceNumber": "123459",
+      "vendor": {
+        "id": 4,
+        "name": "Mailchimp",
+        "approved": false,
+        "avatar": null
+      },
+      "description": "Payment providor",
+      "status": "paid",
+      "hasIssues": 0,
+      "timeInStage": "11 d 15 h",
+      "approver": {
+        "id": 1,
+        "name": "Darlene Robertson",
+        "avatar": "/images/darlene.png"
+      },
+      "paymentDate": "2021-05-19",
+      "due": 779.58
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+@mixin btn-base {
+  @extend .font-base;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+}
+
+.btn {
+  @include btn-base;
+  @include btn-colors($black, $black, $black, $black, $black, $black);
+  padding: 0.675rem 0.75rem;
+
+  &--blue {
+    @include btn-colors(
+      $white,
+      $sky-600,
+      $sky-600,
+      $white,
+      $sky-700,
+      $sky-700
+    );
+  }
+
+  &--orange {
+    @include btn-colors(
+      $white,
+      $orange-600,
+      $orange-600,
+      $white,
+      $orange-700,
+      $orange-700
+    );
+  }
+
+  &--white {
+    @include btn-colors(
+      $grey-800,
+      $white,
+      $grey-400,
+      $grey-800,
+      $grey-100,
+      $grey-400
+    );
+  }
+
+  &--sm {
+    padding: 0.375rem 0.75rem;
+  }
+}
