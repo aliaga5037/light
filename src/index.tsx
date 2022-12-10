@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
 import Invoices from "./pages/invoices";
+import Invoice from "./pages/invoice";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Invoices />,
+      },
+      {
+        path: "/invoice/:id",
+        element: <Invoice />,
       },
     ],
   },

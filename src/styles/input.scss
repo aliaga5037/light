@@ -1,0 +1,33 @@
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  border: 1px solid $grey-200;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    label {
+      @extend .font-xs;
+      color: $grey-500;
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 0;
+    @extend .font-base;
+    color: $grey-800;
+    width: 100%;
+    background: transparent;
+  }
+
+  &--grey {
+    background: $grey-100;
+  }
+}

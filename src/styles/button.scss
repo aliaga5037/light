@@ -12,8 +12,8 @@
 
 .btn {
   @include btn-base;
-  @include btn-colors($black, $black, $black, $black, $black, $black);
-  padding: 0.675rem 0.75rem;
+  @include btn-colors($white, $black, $black, $white, $black, $black);
+  padding: 0.625rem 0.75rem;
 
   &--blue {
     @include btn-colors(

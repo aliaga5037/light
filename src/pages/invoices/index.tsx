@@ -28,7 +28,7 @@ const itemRender: PaginationProps["itemRender"] = (
 const Invoices: React.FC = () => {
   const [invoices, setInvoices] = useState<InvoiceProps[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(5);
   const [activeTab, setActiveTab] = useState("inbox");
   const [total, setTotal] = useState(0);
   const [search, setSearch] = useState("");
@@ -195,10 +195,12 @@ const Invoices: React.FC = () => {
 
         <div className="footer__pagination">
           <Pagination
+            pageSizeOptions={["5", "10", "20", "50"]}
             total={total}
             current={currentPage}
             showSizeChanger
             showLessItems
+            defaultPageSize={pageSize}
             itemRender={itemRender}
             onChange={handlePageChange}
             onShowSizeChange={handlePageSizeChange}

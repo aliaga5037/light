@@ -1,13 +1,16 @@
 import React from "react";
 import { Invoice as InvoiceProps } from "@/api/invoices";
 import { getTimeStatus } from "@/utils/utils";
+import { Link } from "react-router-dom";
 import moment from "moment";
 import Badge from "@/components/badge";
 import userIcon from "@/assets/icons/briefcase.svg";
 import bellIcon from "@/assets/icons/bell.svg";
 import arrowRightIcon from "@/assets/icons/arrow_right.svg";
+import checkIcon from "@/assets/icons/check.svg";
 
 const Invoice: React.FC<InvoiceProps> = ({
+  id,
   vendor,
   description,
   status,
@@ -24,15 +27,19 @@ const Invoice: React.FC<InvoiceProps> = ({
       <td>
         <input type="checkbox" name="select" />
       </td>
-      <td className="invoices__table-user">
-        <span className="invoices__table-user-icon">
-          <img
-            src={vendor.avatar || userIcon}
-            alt={vendor.name}
-            className="invoices__table-user-img"
-          />
-        </span>
-        {vendor.name}
+      <td>
+        <Link className="invoices__table-user" to={`invoice/${id}`}>
+          <span className="invoices__table-user-icon">
+            <img
+              src={vendor.avatar || userIcon}
+              alt={vendor.name}
+              className="invoices__table-user-img"
+            />
+          </span>
+          {vendor.name}
+          &nbsp;
+          {vendor.approved && <img src={checkIcon} alt="verified" />}
+        </Link>
       </td>
       <td>
         <span className="invoices__table-description">{description}</span>

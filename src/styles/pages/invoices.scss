@@ -135,6 +135,9 @@
       display: flex;
       align-items: center;
       cursor: pointer;
+      text-decoration: none;
+      @extend .font-base;
+      color: $grey-800;
       &-icon {
         display: flex;
         justify-content: center;
@@ -247,5 +250,9 @@
     .ant-tabs-tab-btn {
       color: $grey-900 !important;
     }
+  }
+
+  .ant-tabs-ink-bar {
+    background: $grey-900 !important;
   }
 }

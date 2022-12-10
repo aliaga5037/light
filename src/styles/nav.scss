@@ -1,11 +1,11 @@
 .nav {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   padding-right: 0;
 
   @media (max-width: 1024px) {
     display: none;
     position: absolute;
-    top: 54px;
+    top: 52px;
     background-color: $grey-800;
     width: 235px;
     z-index: 1;
